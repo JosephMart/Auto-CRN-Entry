@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         popup: path.join(__dirname, 'src/popup.ts'),
         content_script: path.join(__dirname, 'src/content_script.ts'),
-        vendor: ['moment', 'jquery']
+        vendor: ['jquery']
     },
     output: {
         path: path.join(__dirname, 'dist/js'),
@@ -28,9 +28,6 @@ module.exports = {
             name: 'vendor', 
             minChunks: Infinity
         }),
-
-        // exclude locale files in moment
-        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
         // minify
         // new webpack.optimize.UglifyJsPlugin()

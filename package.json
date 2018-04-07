@@ -14,8 +14,7 @@
     "url": "https://github.com/JosephMart/Auto-CRN-Entry"
   },
   "dependencies": {
-    "jquery": "~3.2.1",
-    "moment": "~2.19.3"
+    "jquery": "~3.2.1"
   },
   "devDependencies": {
     "@types/chrome": "~0.0.49",
