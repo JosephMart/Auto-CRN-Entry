@@ -4,13 +4,9 @@ chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         if(request.run) {
             // Query page dom and add crns to input vals
-            // TODO: update query for actual TAMU sign up page
-            const { CRNS } = request;
-            $('body').find(':input').each(function(i){
-                if (i < CRNS.length)
-                    $(this).val(CRNS[i]);
+            request.CRNS.map((crn, i) => {
+                $(`#crn_id${i + 1}`).val(crn);
             });
-            sendResponse('CRNs set' + CRNS);
         }
     }
 );

@@ -5,14 +5,14 @@ let count: number = 0;
 var CRNS: (string|number)[] = [];
 
 // Templated li format
-function liItem(data: string) {
+function liItem(data: number) {
     return $(`<li class="list-group-item">${data}</li>`);
 }
 
 // Add a new CRN
 function addItem() {
-    // Get value from input fild
-    var crn: string = $('#newCrn').val() as string;
+    // Get value from input field
+    var crn: number = parseInt($('#newCrn').val() as string, 10);
     if (crn) {
         // Update the view to show the CRN added
         $('#crns').append(liItem(crn));
@@ -24,7 +24,7 @@ function addItem() {
         // Update the badge
         chrome.browserAction.setBadgeText({text: `${CRNS.length}`});
     }
-    // Set input field to be empty and set it to be foucsed
+    // Set input field to be empty and set it to be focused
     $('#newCrn').val('');
     focusInput();
 }

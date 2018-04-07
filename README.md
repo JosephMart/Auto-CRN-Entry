@@ -2,6 +2,7 @@
 
 Auto CRN entry for Texas A&M students trying to ensure they get into the classes they want!
 
+`google-chrome-stable --disable-web-security --user-data-dir`
 ## Dependencies
 
 * [node + npm](https://nodejs.org/)
