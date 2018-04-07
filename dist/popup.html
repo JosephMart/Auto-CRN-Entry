@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Auto CRN Entry</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <style lang="css">
+            .close {
+                color: #ff0000;
+                font-size: 1.2rem;
+                padding: 0;
+            }
+            .close:hover {
+                color: #ff0000;
+                opacity: 1;
+            }
+            * {
+                border-radius: 0 !important;
+            }
+            .list-group-item:hover {
+                text-decoration: none;
+                background-color: #cccccc;
+            }
+        </style>
+        <script src="js/vendor.js"></script>
+    </head>
+    <body>
+        <ul class="list-group" id="crns"></ul>
+        <input type="text" id="newCrn" class="form-control" placeholder="CRN"/>
+        <div class="btn-group" role="group">
+            <button id="addCrn" class="btn btn-primary btn-sm">Add CRN</button>
+            <button id="run" class="btn btn-success btn-sm">Run</button>
+            <button id="reset" class="btn btn-danger btn-sm">Reset</button>
+        </div>
+        <script src="js/popup.js"></script>
+    </body>
+</html>
+
