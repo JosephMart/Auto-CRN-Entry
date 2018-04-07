@@ -4,8 +4,9 @@
   "description": "Save and enter TAMU CRNs",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack",
-    "watch": "./node_modules/.bin/webpack -w"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js"
   },
   "author": "JosephMart",
   "license": "MIT",
@@ -19,8 +20,12 @@
   "devDependencies": {
     "@types/chrome": "^0.0.63",
     "@types/jquery": "~3.3.1",
-    "ts-loader": "~2.3.7",
+    "ts-loader": "~4.2.0",
     "typescript": "~2.8.1",
-    "webpack": "~3.7.0"
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "~4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.2",
+    "webpack-merge": "^4.1.2"
   }
 }
