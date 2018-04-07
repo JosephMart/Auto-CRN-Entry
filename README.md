@@ -1,5 +1,7 @@
 # Auto CRN Entry
 
+[![deps][deps]][deps-url]
+
 Auto CRN entry for Texas A&M students trying to ensure they get into the classes they want!
 
 ## Dependencies
@@ -49,3 +51,6 @@ type `Ctrl + Shift + B`
 
 Load `dist` directory
 
+
+[deps]: https://img.shields.io/david/JosephMart/Auto-CRN-Entry.svg
+[deps-url]: https://david-dm.org/JosephMart/Auto-CRN-Entry
