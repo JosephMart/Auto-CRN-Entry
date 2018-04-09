@@ -2,7 +2,14 @@
 
 [![deps][deps]][deps-url]
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gRPFEAtMMU0/0.jpg)](https://www.youtube.com/watch?v=gRPFEAtMMU0)
+
+
 Auto CRN entry for Texas A&M students trying to ensure they get into the classes they want!
+
+[Website](https://return0software.com/crn)
+
+[Chrome Store](https://chrome.google.com/webstore/detail/crn-automation/cjaclnpoihnmcojmbinlikenmidkefel)
 
 ## Dependencies
 
